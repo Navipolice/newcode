@@ -3,13 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="runner.Run">
+      <class name="maven1.Testprg">
         <methods>
-          <include name="setUpClass"/>
-          <include name="tearDownClass"/>
-          <include name="runScenario" invocation-numbers="0"/>
+          <include name="launch"/>
+          <include name="product"/>
+          <include name="ss"/>
+          <include name="cart"/>
+          <include name="login"/>
+          <include name="check"/>
+          <include name="signout"/>
         </methods>
-      </class> <!-- runner.Run -->
+      </class> <!-- maven1.Testprg -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
