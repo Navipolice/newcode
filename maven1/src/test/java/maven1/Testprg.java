@@ -5,32 +5,32 @@ import org.testng.annotations.Test;
 import maven1.*;
 
 public class Testprg {
-	@Test 
+	@Test (groups = {"smoke"})
 	public  void launch()  {
 		Baseclass.Launch();
 	}
-	@Test (dependsOnMethods = "launch")
+	@Test (groups = {"sanity"})
 	public void login() {
 		Baseclass.login();
 	}
-	@Test (dependsOnMethods = "login")
+	@Test (groups = {"smoke"})
 	public void product() {
 		Baseclass.product();
 		
 	}
-	@Test (dependsOnMethods = "product")
+	@Test (groups = {"sanity"})
 	public void cart() {
 		Baseclass.cart();
 	}
-	@Test (dependsOnMethods = "cart")
+	@Test (groups = {"smoke"})
 	public void check() {
 		Baseclass.check();
 	}
-	@Test (dependsOnMethods = "check")
+	@Test (groups = {"sanity"})
 	public void ss() throws Exception {
 		Baseclass.screenshot();
 	}	
-	@Test(dependsOnMethods = "ss")
+	@Test(groups = {"reg"})
 	public void signout() {
 		Baseclass.signout();
 		
