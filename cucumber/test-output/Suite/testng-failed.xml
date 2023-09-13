@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="Runner.Bankrun">
+        <methods>
+          <include name="openacc"/>
+          <include name="login"/>
+          <include name="amt"/>
+          <include name="Run"/>
+          <include name="details"/>
+          <include name="withdraw"/>
+          <include name="trans"/>
+          <include name="deposite"/>
+        </methods>
+      </class> <!-- Runner.Bankrun -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

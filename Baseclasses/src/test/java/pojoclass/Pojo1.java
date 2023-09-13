@@ -3,7 +3,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.xml.LaunchSuite;
-
+import utils.Excel;
 import main.Mainmethod;
 
 public class Pojo1 {
@@ -31,9 +31,25 @@ public class Pojo1 {
 	@FindBy(id="RESULT_TextField-6")
 	private WebElement email;
 	
+	@FindBy(xpath = "//input[@id='RESULT_RadioButton-7_0']")
+	private WebElement Male;
+	
+	@FindBy(xpath = "//input[@id='RESULT_RadioButton-7_1']")
+	private WebElement Female;
+
+	
 	
 	public WebElement getFname() {
+		
 		return fname;
+	}
+
+	public WebElement getMale() {
+		return Male;
+	}
+
+	public WebElement getFemale() {
+		return Female;
 	}
 
 	public WebElement getLname() {
